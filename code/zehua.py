@@ -7,7 +7,7 @@ import numpy as np
 This graph is about the food Insecurity percent by different races in each month in 2020 in California
 data: represent each race percent encounter food insecurity compare to the overall each race in california by month
 '''
-data = pd.read_csv('2022 food insecurity vs race .csv')
+data = pd.read_csv('/Users/mcsweetsoup/Desktop/ECE143/ECE143_finalproject_submit/data/2022 food insecurity vs race .csv')
 plt.figure(figsize=(15,8))
 month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 #Asian Plot
