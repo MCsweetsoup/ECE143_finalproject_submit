@@ -6,3 +6,7 @@ Meaning of each picture:
 ‘race’: different races encounter food insecurity percent compare to its own race population in CA in each month in 2020, red horizontal dash line represents the peak of five races, and the black vertical dash line is its corresponding month
 
 ‘state’: top ten population states in 2020 with different race encounter food insecurity percent, each color bar representing the average precent over 2020 
+
+ ‘Food insecurity rate for each state in 2020' : show the people in food security vs all people of each states in US
+
+‘Food Security Status of U.S. Households with Children in 2020’：show the food insecurity rate of household with childern
