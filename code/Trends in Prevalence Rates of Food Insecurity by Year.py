@@ -30,8 +30,8 @@ plt.axvline(x = 14, color = 'black', ls = ':', alpha = 0.75)
 plt.annotate('2009 Great Recession', rotation = 90, xy = (14.2, 0.5), fontsize = 9)
 plt.axvline(x = 6, color = 'black', ls = ':',alpha = 0.75)
 plt.annotate('9/11 Terroists Attack', rotation = 90, xy = (6.2, 0.5), fontsize = 9)
-plt.axvline(x = 24, color = 'black', ls = ':', alpha = 0.75)
-plt.annotate('COVID-19 Pandemic', rotation = 90, xy = (24.2, 0.5), fontsize = 9)
+plt.axvline(x = 25, color = 'black', ls = ':', alpha = 0.75)
+plt.annotate('COVID-19 Pandemic', rotation = 90, xy = (25.2, 0.5), fontsize = 9)
 
 #mark important percentages
 plt.axhline(y = 12, color = 'red', ls = '--' ,alpha = 0.5 )
