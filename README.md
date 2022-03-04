@@ -34,7 +34,7 @@ Second dataset: It contains the people have the food insecurity on different rac
 https://www.ipr.northwestern.edu/state-food-insecurity.html<br>
 
 "States percents.xlsx": dataset of the percent of each states in USA that have food insecurity<br>
-https://frac.org/maps/food-security/tables/tab1_foodinsecurity_2018_2020.html<br>
+https://www.ipr.northwestern.edu/state-food-insecurity.html<br>
 
 "trends.xlsx" : data set of percentage of people in US that are food insecure from 1995-2020<br>
 https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statistics-graphics/#:~:text=in%20Excel%20format.-,Trends%20in%20Prevalence%20Rates,to%2010.5%20percent%20in%202019<br>
