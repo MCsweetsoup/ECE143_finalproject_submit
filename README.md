@@ -32,6 +32,8 @@ https://map.feedingamerica.org/county/2019/overall/california<br>
 First dataset: It contains the people have food insecurity on different race  compare to its own race population in California on each month in 2020<br>
 Second dataset: It contains the people have the food insecurity on different race by each states in 2020<br>
 https://www.ipr.northwestern.edu/state-food-insecurity.html<br>
+
+"States percents.xlsx": dataset of the percent of each states in USA that have food insecurity<br>
 https://frac.org/maps/food-security/tables/tab1_foodinsecurity_2018_2020.html<br>
 
 "trends.xlsx" : data set of percentage of people in US that are food insecure from 1995-2020<br>
