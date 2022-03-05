@@ -5,6 +5,9 @@ import plotly.figure_factory as ff
 import matplotlib.image as mpimg
 import os
 
+#Change to project directory
+PROJECT_ROOT_DIR = "C:\School\ECE_143\Final_Project\\"
+
 #Read in data for geographical coordinate tranformation
 data = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/california_foodbanks.csv')
 
