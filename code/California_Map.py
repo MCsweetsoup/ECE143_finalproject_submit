@@ -6,7 +6,7 @@ import matplotlib.image as mpimg
 import os
 
 #Change to project directory
-PROJECT_ROOT_DIR = "C:\School\ECE_143\Final_Project\\"
+# PROJECT_ROOT_DIR = "https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/"
 
 #Read in data for geographical coordinate tranformation
 data = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/california_foodbanks.csv')
@@ -35,7 +35,7 @@ coordinates = pd.DataFrame.from_dict(coords)
 #Start of Nick's Code (Subject to change)
 
 #Read in data for heatmap
-fname = PROJECT_ROOT_DIR + 'data\county food insercuity in CA.csv'
+fname = 'https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/county%20food%20insercuity%20in%20CA.csv'
 county_food_inse = pd.read_csv(fname)
 
 #Debugging
@@ -55,7 +55,7 @@ color = ['#c35b7e' , '#910736', '#866ba8', '#f13710', '#f8c928', '#ff8817']
 # )
 
 # #Using random image and not conforming
-california_img = mpimg.imread(os.path.join(PROJECT_ROOT_DIR,'Image','food_insecurity.png'))
+california_img = mpimg.imread('../image/food_insecurity.png')
 ax = coordinates.plot(kind="scatter", x="lon", y="lat", figsize=(10,7), label="Food Banks", alpha = .5)
 plt.grid(alpha = .25)
 #extent = [bottom_left_lat, top_right_lat, bottom_left_log, top_right_lat]
