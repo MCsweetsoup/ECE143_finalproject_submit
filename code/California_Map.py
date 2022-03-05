@@ -5,13 +5,8 @@ import plotly.figure_factory as ff
 import matplotlib.image as mpimg
 import os
 
-#Change to project directory
-PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/data/"
-
 #Read in data for geographical coordinate tranformation
-fname = PROJECT_ROOT_DIR + 'california_foodbanks.csv'
-data = pd.read_csv(fname)
-
+data = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/california_foodbanks.csv')
 
 #Extract zip code
 #Note that some of these only get one zip code in each county may lead to more data on density
@@ -25,7 +20,7 @@ for index, row in data.iterrows():
         zip_codes.append(row['Address'][-5:])
         
 # #Debugging
-# print(zip_codes)
+print(zip_codes)
 
 #Convert zip code to longitude, latitude
 nomi = pgeocode.Nominatim('us')

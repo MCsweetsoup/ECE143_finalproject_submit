@@ -5,17 +5,11 @@ from matplotlib import cm
 import plotly.figure_factory as ff
 import folium
 import json
-# %matplotlib inline
-
-#Change to project directory
-PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/data/"
+#%matplotlib inline
 
 #Read in data
 # load food insecurity level by county
-fname = PROJECT_ROOT_DIR + 'county food insercuity in CA.csv'
-county_food_inse = pd.read_csv(fname)
-
-
+county_food_inse = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/county%20food%20insercuity%20in%20CA.csv')
 # print(county_food_inse['percent'].mean() + 2 * county_food_inse['percent'].std())
 
 # food insecurity level by county

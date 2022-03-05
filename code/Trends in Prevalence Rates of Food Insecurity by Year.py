@@ -4,14 +4,8 @@ import matplotlib.pyplot as plt
 import math
 import numpy as np
 
-#read data
-#Change to project directory
-PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/"
-
 #Read in data
-fname = PROJECT_ROOT_DIR + 'data/Trends in Prevalence Rates of Food Insecurity by Year.csv'
-#plot data'
-data = pd.read_csv(fname)
+data = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/Trends%20in%20Prevalence%20Rates%20of%20Food%20Insecurity%20by%20Year.csv')
 
 #plot data
 plt.figure(figsize=(7,7))
