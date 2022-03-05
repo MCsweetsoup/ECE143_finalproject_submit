@@ -20,7 +20,7 @@ split = df_sample['County Name/State Abbreviation'].str.split(', ').apply(pd.Ser
 df_sample['States'] = split[1]
 
 # our own data
-state_percentage = pd.read_csv('.\data\States percents.csv')
+state_percentage = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/ECE143_finalproject_submit/master/data/States%20percents.csv')
 
 # merge the two data
 new = pd.merge(df_sample, state_percentage, on='States')
