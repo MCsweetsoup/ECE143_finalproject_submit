@@ -39,7 +39,8 @@ new = pd.merge(df_sample, state_percentage, on='States')
 # different shade of orange/yellow
 # colorscale = ['#F8D568', '#FFAE42', '#FF9F00', '#FFA500', '#FF8C00', '#F58025', ]
 
-colorscale = ['#910736' , '#c35b7e', '#866ba8', '#f8c928', '#ff8817', '#f13710']
+#Used in presentation
+colorscale = ['#910736' , '#c35b7e', '#866ba8', '#f8c928', '#ff8817', '#f13710'] 
 # colorscale = ['#FEF001', '#FFCE03', '#FD9A01', '#FD6104', '#FF2C05', '#F00505', ]
 
 fips = new['FIPS'].tolist()
