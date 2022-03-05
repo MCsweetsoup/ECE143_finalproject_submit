@@ -27,24 +27,20 @@ plt.locator_params(axis="x", nbins=8)
 
 #mark important year line dates from 1995-2020
 plt.axvline(x = 14, color = 'black', ls = ':', alpha = 0.75)
-plt.annotate('2009 Great Recession', rotation = 90, xy = (14.2, 0.5), fontsize = 9)
-plt.axvline(x = 6, color = 'black', ls = ':',alpha = 0.75)
-plt.annotate('9/11 Terroists Attack', rotation = 90, xy = (6.2, 0.5), fontsize = 9)
-plt.axvline(x = 25, color = 'black', ls = ':', alpha = 0.75)
-plt.annotate('COVID-19 Pandemic', rotation = 90, xy = (25.2, 0.5), fontsize = 9)
+plt.annotate('2009 Great Recession', rotation = 90, xy = (14.2, 0.5), fontsize = 11)
 
 #mark important percentages
 plt.axhline(y = 12, color = 'red', ls = '--' ,alpha = 0.5 )
-plt.annotate('Severe Food Insecurity', xy = (0, 12.2), fontsize = 9, color = 'red')
+plt.annotate('Severe Food Insecurity', xy = (0, 12.2), fontsize = 11, color = 'red')
 plt.axhline(y = 5, color = 'red',ls = '--', alpha = 0.5)
-plt.annotate('Severe Very Food Insecure', xy = (0, 5.2), fontsize = 9, color = 'red')
+plt.annotate('Severe Very Food Insecure', xy = (0, 5.2), fontsize = 11, color = 'red')
 
 #place legend
 plt.legend(loc='upper right')
 
 #plot x,y axis and title
 plt.xlabel("Year")
-plt.ylabel("Percent %")
+plt.ylabel("Percentage of US Households %")
 plt.title('Trends in Prevalence Rates of Food Insecurity by Year')
 
 #adjust the ylimit
