@@ -5,7 +5,13 @@ import math
 import numpy as np
 
 #read data
-data = pd.read_excel('Trends in Prevalence Rates of Food Insecurity by Year.xlsx')
+#Change to project directory
+PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/"
+
+#Read in data
+fname = PROJECT_ROOT_DIR + 'data/Trends in Prevalence Rates of Food Insecurity by Year.csv'
+#plot data'
+data = pd.read_csv(fname)
 
 #plot data
 plt.figure(figsize=(7,7))

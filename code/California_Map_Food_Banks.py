@@ -4,11 +4,12 @@ import matplotlib.pyplot as plt #for plotting
 from mpl_toolkits.basemap import Basemap
 
 #Change to project directory
-PROJECT_ROOT_DIR = "C:\School\ECE_143\Final_Project\\"
+PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/data/"
 
 #Read in data
-fname = PROJECT_ROOT_DIR + 'data\california_foodbanks.csv'
+fname = PROJECT_ROOT_DIR + 'california_foodbanks.csv'
 data = pd.read_csv(fname)
+
 
 #Extract zip code
 #Note that some of these only get one zip code in each county may lead to more data on density

@@ -7,8 +7,14 @@ import folium
 import json
 # %matplotlib inline
 
+#Change to project directory
+PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/data/"
+
+#Read in data
 # load food insecurity level by county
-county_food_inse = pd.read_csv('county food insercuity in CA.csv')
+fname = PROJECT_ROOT_DIR + 'county food insercuity in CA.csv'
+county_food_inse = pd.read_csv(fname)
+
 
 # print(county_food_inse['percent'].mean() + 2 * county_food_inse['percent'].std())
 

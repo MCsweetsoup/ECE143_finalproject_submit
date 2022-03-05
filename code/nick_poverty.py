@@ -7,9 +7,14 @@ import folium
 import json
 # %matplotlib inline
 
+
+#Change to project directory
+PROJECT_ROOT_DIR = "/Users/mcsweetsoup/Desktop/ECE143_finalproject_submit/data/"
+
+#Read in data
 # load poverty of California by county dataset
-data = pd.read_csv('poverty.csv')
-# print(data)
+fname = PROJECT_ROOT_DIR + 'poverty.csv'
+data = pd.read_csv(fname)
 
 # load estimate by county name 
 estimate_by_county = data.loc[data['race_eth_name'] == 'Total'][['estimate', 'county_name']]
