@@ -15,7 +15,9 @@ county_food_inse = pd.read_csv('https://raw.githubusercontent.com/MCsweetsoup/EC
 # food insecurity level by county
 values = county_food_inse['percent'].tolist()
 fips = county_food_inse['fips'].tolist()
-color = ['#c35b7e' , '#910736', '#866ba8', '#f13710', '#f8c928', '#ff8817']
+# color = ['#c35b7e' , '#910736', '#866ba8', '#f13710', '#f8c928', '#ff8817']
+color = ['#c35b7e' , '#910736', '#866ba8', '#f8c928', '#ff8817', '#f13710']
+
 
 # generate heatmap of food insecurity of CA county
 fig = ff.create_choropleth(

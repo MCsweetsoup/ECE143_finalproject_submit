@@ -20,7 +20,7 @@ split = df_sample['County Name/State Abbreviation'].str.split(', ').apply(pd.Ser
 df_sample['States'] = split[1]
 
 # our own data
-state_percentage = pd.read_excel('../data/States percents.xlsx')
+state_percentage = pd.read_excel('./data/States percents.xlsx')
 
 # merge the two data
 new = pd.merge(df_sample, state_percentage, on='States')
@@ -37,8 +37,10 @@ new = pd.merge(df_sample, state_percentage, on='States')
 # colorscale = ['#866ba8', '#f8c928', '#c35b7e', '#910736', '#ff8817', '#f13710', ]
 
 # different shade of orange/yellow
-colorscale = ['#F8D568', '#FFAE42', '#FF9F00', '#FFA500', '#FF8C00', '#F58025', ]
+# colorscale = ['#F8D568', '#FFAE42', '#FF9F00', '#FFA500', '#FF8C00', '#F58025', ]
 
+colorscale = ['#910736' , '#c35b7e', '#866ba8', '#f8c928', '#ff8817', '#f13710']
+# colorscale = ['#FEF001', '#FFCE03', '#FD9A01', '#FD6104', '#FF2C05', '#F00505', ]
 
 fips = new['FIPS'].tolist()
 values = new['Percent'].tolist()
@@ -48,10 +50,11 @@ fig = ff.create_choropleth(
     binning_endpoints=[12.0, 15.0, 18.0, 21.0, 24.0],
     colorscale=colorscale,
     show_state_data=False,
+    county_outline = {'color': 'black', "width": 0.1},
+    state_outline = {'color': 'black', "width": 1},
     show_hover=True, centroid_marker={'opacity': 0},
     asp=2.9, title='Food insecurity rate for each state in 2020',
     legend_title='Percentage'
 )
-
 fig.layout.template = None
 fig.show()
