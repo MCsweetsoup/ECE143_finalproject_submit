@@ -20,7 +20,7 @@ split = df_sample['County Name/State Abbreviation'].str.split(', ').apply(pd.Ser
 df_sample['States'] = split[1]
 
 # our own data
-state_percentage = pd.read_excel('./data/States percents.xlsx')
+state_percentage = pd.read_csv('.\data\States percents.csv')
 
 # merge the two data
 new = pd.merge(df_sample, state_percentage, on='States')
@@ -41,6 +41,7 @@ new = pd.merge(df_sample, state_percentage, on='States')
 
 #Used in presentation
 colorscale = ['#910736' , '#c35b7e', '#866ba8', '#f8c928', '#ff8817', '#f13710'] 
+
 # colorscale = ['#FEF001', '#FFCE03', '#FD9A01', '#FD6104', '#FF2C05', '#F00505', ]
 
 fips = new['FIPS'].tolist()
