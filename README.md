@@ -25,12 +25,36 @@ plotly<br>
 pgeocode<br>
 plotly-geo<br>
 geopandas<br>
-pyshp<br>
-shapely<br>
+tkinter<br>
+mpltoolkits<br>
 
 
+# File Structure
+Code: This folder contains all scripts used for generating visualizations. A detailed explanation of each file is provided in code description sections.
 
-# Dataset description
+Data: This folder contains all raw data csv file. A detailed explanation of each dataset we have used is given in dataset description section. 
+
+Image: This folder contains all visualizations used for final presentation. 
+
+# Code Description
+California_Map.py: This script loads all food bank locations and superimposes them onto a heatmap of California food insecure rates in different county. Run $python California_Map.py to get the result.
+
+California_Map_Food_Banks.py: This script generates a map California with various food bank locations superimposed on it. Run python California_Map_Food_Banks.py to get the result.
+
+Food Security Status of U.S. Households with Children in 2020.py: This script generates a pie chart with three levels of food insecurity for family with children. Run $python Food Security Status of U.S. Households with Children in 2020.py to generate the result.
+
+Trends in Prevalence Rates of Food Insecurity by Year.py: This script generates a plot with trends of food insecurity levels over a span of 20 years. Two levels of insecurities are plotted: food insecure and very food insecure. Also some notable timestamps have been marked out, such as 2009 Great Recession. Run $python Trends in Prevalence Rates of Food Insecurity by Year.py to get the result. 
+
+US heatmap with food insecurity percentage.py: This script plots a heatmap over the entire US, with food insecurity level of each state drawn out. Run $python US heatmap with food insecurity percentage.py to get the visualization.
+
+nick_food_insecurity.py: This script plots a heatmap of food insecurity level by different counties in California. Run $python nick_food_insecurity.py to see the result.
+
+nick_poverty.py: This script contains a heatmap of California poverty level of different counties. Run $python nick_poverty.py to the result. 
+
+zehua.py: Generate 3 graphs in total. The first is food insecure family percentage by race or ethinicity and by month in California. The second is average food insecure family percentage by race. The thrid graph is the top 10 states with food insecure family. Run $python zehua.py to get the results.
+
+
+# Dataset Description
 "county food insercuity in CA.csv": dataset of the people have food insecurity problem for each county in California<br>
 https://map.feedingamerica.org/county/2019/overall/california<br>
 
