@@ -19,7 +19,7 @@ We wish to use a combination of multiple datasets studying aspects of food insec
 panda<br>
 numpy<br>
 matplotlib.pyplot<br>
-matplotlib = 3.2<br>
+matplotlib<br>
 folium<br>
 plotly<br>
 pgeocode<br>
